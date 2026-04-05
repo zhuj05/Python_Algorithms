@@ -20,7 +20,8 @@ def dfs_iterative_optimized(graph, start_node):
             # Optimization 4: List comprehension/Reversed filtering
             # We push neighbors in reverse to maintain expected traversal order
             neighbors = [n for n in graph.get(node, []) if n not in visited]
-            stack.extend(reversed(neighbors))
+            #stack.extend(reversed(neighbors))
+            stack.extend((neighbors))
             
     return result
 
@@ -39,3 +40,4 @@ output = dfs_iterative_optimized(graph, 'A')
 print(f"DFS result: {output}")
 # output
 # DFS result: ['A', 'B', 'D', 'E', 'F', 'C']
+# DFS result: ['A', 'C', 'F', 'E', 'B', 'D']
