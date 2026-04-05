@@ -1,4 +1,5 @@
 # Depth-First Search (DFS) - Iterative Approach(深度優先搜尋-迭代法)
+# O(1)
 def dfs_iterative(graph, start):
     # Initialize an empty set to keep track of visited nodes to avoid infinite loops
     visited = set()
